@@ -20,6 +20,9 @@ function App() {
 
   return (
     <div className="app">
+      
+      {/* main */}
+
       <motion.section
         style={{
           y: headerY,
@@ -64,6 +67,8 @@ function App() {
         </motion.div>
       </motion.section>
 
+      {/* text-animate */}
+
       <div className="h-[6.5vh] relative overflow-hidden mb-[8vh]">
         <AnimatePresence>
           {showAbout && (
@@ -93,6 +98,8 @@ function App() {
           )}
         </AnimatePresence>
       </div>
+
+      {/* about */}
 
       <motion.section
         className="bg-secondary py-12 mb-[15vh] rounded-t-[2rem]"
@@ -289,6 +296,8 @@ function App() {
         </div>
       </motion.section>
 
+      {/* Projects */}
+
       <motion.section
         className="py-12 px-6 bg-secondary mb-[15vh] rounded-t-[2rem]"
         initial={{ opacity: 0 }}
@@ -446,6 +455,8 @@ function App() {
           </div>
         </div>
       </motion.section>
+
+      {/* education? */}
 
       <motion.section
         className="pt-12 px-6 bg-secondary rounded-t-[2rem]"
