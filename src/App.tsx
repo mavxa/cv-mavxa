@@ -33,27 +33,26 @@ function App() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="relative z-10"
         >
-          <h1 className="text-[rgb(var(--accent))] text-[12rem] font-bold preview flex flex-col items-center gap-4">
+          <h1 className="text-[rgb(var(--accent))] text-[12rem] font-bold preview flex flex-col items-center gap-16">
             <motion.span
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.2, duration: 0.6 }}
+              transition={{ delay: 0.4, duration: 0.6 }}
               className="inline-block"
             >
-              welcome to
+              WELCOM TO
             </motion.span>
             <motion.span
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.4, duration: 0.6 }}
-              className="inline-block bg-clip-text text-transparent bg-gradient-to-r from-[rgb(var(--accent))] to-[rgb(var(--primary))]"
+              transition={{ delay: 0.6, duration: 0.6 }}
+              className="inline-block bg-clip-text bg-gradient-to-r from-[rgb(var(--accent))] to-[rgb(var(--primary))]"
             >
-              my cv
+              MY CV
             </motion.span>
           </h1>
         </motion.div>
         
-        {/* Animated background elements */}
         <motion.div 
           className="absolute inset-0 z-0"
           initial={{ opacity: 0 }}
@@ -61,7 +60,7 @@ function App() {
           transition={{ duration: 1 }}
         >
           <div className="absolute top-[20%] left-[20%] w-[20vw] h-[20vw] rounded-full bg-[rgb(var(--accent))] blur-[100px]" />
-          <div className="absolute bottom-[20%] right-[20%] w-[15vw] h-[15vw] rounded-full bg-[rgb(var(--primary))] blur-[80px]" />
+          <div className="absolute bottom-[60%] right-[10%] w-[25vw] h-[25vw] rounded-full bg-[rgb(var(--secondary))] blur-[100px]" />
         </motion.div>
       </motion.section>
 
@@ -104,7 +103,6 @@ function App() {
       >
         <div className="max-w-[20em] md:max-w-[80em] mx-auto px-6">
           <div className="flex flex-col md:flex-row gap-[12vh] items-start">
-            {/* Left column with avatar */}
             <motion.div
               initial={{ x: -50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
@@ -126,7 +124,7 @@ function App() {
               transition={{ delay: 0.3 }}
               className="w-full md:w-[70%]"
             >
-              <h2 className="text-[rgb(var(--primary))] text-4xl font-bold mb-5">
+              <h2 className="text-[rgb(var(--primary))] text-5xl font-bold mb-5">
                 Mavxa
               </h2>
 
@@ -134,14 +132,14 @@ function App() {
                 <h3 className="text-[rgb(var(--accent))] text-xl font-semibold mb-2">
                   Languages
                 </h3>
-                <ul className="space-y-1 flex gap-2.5">
+                <ul className="space-y-1 flex gap-2.5 text-[rgb(var(--primary))]/75">
                   <li>🇷🇺 Russian (Native)</li>
                   <li>|</li>
                   <li>🇬🇧 English (Intermediate)</li>
                 </ul>
               </div>
 
-              <div className="mb-5">
+              <div className="mb-5 text-[rgb(var(--primary))]/75">
                 <h3 className="text-[rgb(var(--accent))] text-xl font-semibold mb-2">
                   Contact
                 </h3>
