@@ -28,7 +28,7 @@ function App() {
           y: headerY,
           scale: scale,
         }}
-        className="bg-[rgb(var(--primary))] text-center py-[12vh] border-[rgb(var(--secondary))] relative overflow-hidden"
+        className="bg-primary text-center py-[12vh] border-secondary relative overflow-hidden"
       >
         <motion.div
           initial={{ opacity: 0, y: 100 }}
@@ -36,20 +36,20 @@ function App() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="relative z-10"
         >
-          <h1 className="text-[rgb(var(--accent))] text-[12rem] font-bold preview flex flex-col items-center gap-16">
+          <h1 className="text-accent text-[12rem] font-bold preview flex flex-col items-center gap-16">
             <motion.span
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.4, duration: 0.6 }}
               className="inline-block"
             >
-              WELCOM TO
+              WELCOME TO
             </motion.span>
             <motion.span
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.6, duration: 0.6 }}
-              className="inline-block bg-clip-text bg-gradient-to-r from-[rgb(var(--accent))] to-[rgb(var(--primary))]"
+              className="inline-block bg-clip-text bg-gradient-to-r from-accent to-primary"
             >
               MY CV
             </motion.span>
@@ -62,8 +62,8 @@ function App() {
           animate={{ opacity: 0.1 }}
           transition={{ duration: 1 }}
         >
-          <div className="absolute top-[20%] left-[20%] w-[20vw] h-[20vw] rounded-full bg-[rgb(var(--accent))] blur-[100px]" />
-          <div className="absolute bottom-[60%] right-[10%] w-[25vw] h-[25vw] rounded-full bg-[rgb(var(--secondary))] blur-[100px]" />
+          <div className="absolute top-[20%] left-[20%] w-[20vw] h-[20vw] rounded-full bg-accent blur-[100px]" />
+          <div className="absolute bottom-[60%] right-[10%] w-[25vw] h-[25vw] rounded-full bg-secondary blur-[100px]" />
         </motion.div>
       </motion.section>
 
@@ -88,7 +88,7 @@ function App() {
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{ delay: 0.2 }}
-                  className="text-[rgb(var(--text))] text-xl text-center leading-relaxed"
+                  className="text-text text-xl text-center leading-relaxed"
                 >
                   Junior Frontend Developer currently studying IT, passionate
                   about creating responsive and user-friendly web applications.
@@ -102,7 +102,7 @@ function App() {
       {/* about */}
 
       <motion.section
-        className="bg-[rgb(var(--secondary))] py-12 mb-[15vh] rounded-t-[2rem]"
+        className="bg-secondary py-12 mb-[15vh] rounded-t-[2rem]"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6 }}
@@ -116,7 +116,7 @@ function App() {
               transition={{ delay: 0.2 }}
               className="w-full md:w-[30%]"
             >
-              <div className="rounded-full overflow-hidden border-4 border-[rgb(var(--primary))] aspect-square mb-6">
+              <div className="rounded-full overflow-hidden border-4 border-primary aspect-square mb-6">
                 <img
                   src="https://github.com/mavxa.png"
                   alt="Avatar"
@@ -131,30 +131,28 @@ function App() {
               transition={{ delay: 0.3 }}
               className="w-full md:w-[70%]"
             >
-              <h2 className="text-[rgb(var(--primary))] text-5xl font-bold mb-5">
-                Mavxa
-              </h2>
+              <h2 className="text-primary text-5xl font-bold mb-5">Mavxa</h2>
 
               <div className="mb-5">
-                <h3 className="text-[rgb(var(--accent))] text-xl font-semibold mb-2">
+                <h3 className="text-accent text-xl font-semibold mb-2">
                   Languages
                 </h3>
-                <ul className="space-y-1 flex gap-2.5 text-[rgb(var(--primary))]/75">
+                <ul className="space-y-1 flex gap-2.5 text-primary/75">
                   <li>🇷🇺 Russian (Native)</li>
                   <li>|</li>
                   <li>🇬🇧 English (Intermediate)</li>
                 </ul>
               </div>
 
-              <div className="mb-5 text-[rgb(var(--primary))]/75">
-                <h3 className="text-[rgb(var(--accent))] text-xl font-semibold mb-2">
+              <div className="mb-5 text-/75">
+                <h3 className="text-accent text-xl font-semibold mb-2">
                   Contact
                 </h3>
                 <ul className="space-y-2">
                   <li>
                     <a
                       href="mailto:mavxa@duck.com"
-                      className="flex items-center gap-2 hover:text-[rgb(var(--primary))] transition-colors"
+                      className="flex items-center gap-2 hover:text-primary transition-colors"
                     >
                       📧 mavxa@duck.com
                     </a>
@@ -162,7 +160,7 @@ function App() {
                   <li>
                     <a
                       href="https://t.me/mavxa"
-                      className="flex items-center gap-2 hover:text-[rgb(var(--primary))] transition-colors"
+                      className="flex items-center gap-2 hover:text-primary transition-colors"
                     >
                       📱 Telegram: @mavxa
                     </a>
@@ -170,7 +168,7 @@ function App() {
                   <li>
                     <a
                       href="https://github.com/mavxa"
-                      className="flex items-center gap-2 hover:text-[rgb(var(--primary))] transition-colors"
+                      className="flex items-center gap-2 hover:text-primary transition-colors"
                     >
                       💻 GitHub: @mavxa
                     </a>
@@ -179,11 +177,11 @@ function App() {
               </div>
 
               <div>
-                <h3 className="text-[rgb(var(--accent))] text-xl font-semibold mb-2">
+                <h3 className="text-accent text-xl font-semibold mb-2">
                   Tech Stack
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 rounded-full bg-[rgb(var(--primary))] bg-opacity-10 backdrop-blur-sm flex items-center gap-2">
+                  <span className="px-3 py-1 rounded-full bg-primary bg-opacity-10 backdrop-blur-sm flex items-center gap-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -195,7 +193,7 @@ function App() {
                     </svg>
                     HTML5
                   </span>
-                  <span className="px-3 py-1 rounded-full bg-[rgb(var(--primary))] bg-opacity-10 backdrop-blur-sm flex items-center gap-2">
+                  <span className="px-3 py-1 rounded-full bg-primary bg-opacity-10 backdrop-blur-sm flex items-center gap-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -207,7 +205,7 @@ function App() {
                     </svg>
                     CSS3
                   </span>
-                  <span className="px-3 py-1 rounded-full bg-[rgb(var(--primary))] bg-opacity-10 backdrop-blur-sm flex items-center gap-2">
+                  <span className="px-3 py-1 rounded-full bg-primary bg-opacity-10 backdrop-blur-sm flex items-center gap-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -219,7 +217,7 @@ function App() {
                     </svg>
                     SCSS
                   </span>
-                  <span className="px-3 py-1 rounded-full bg-[rgb(var(--primary))] bg-opacity-10 backdrop-blur-sm flex items-center gap-2">
+                  <span className="px-3 py-1 rounded-full bg-primary bg-opacity-10 backdrop-blur-sm flex items-center gap-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -231,7 +229,7 @@ function App() {
                     </svg>
                     JavaScript
                   </span>
-                  <span className="px-3 py-1 rounded-full bg-[rgb(var(--primary))] bg-opacity-10 backdrop-blur-sm flex items-center gap-2">
+                  <span className="px-3 py-1 rounded-full bg-primary bg-opacity-10 backdrop-blur-sm flex items-center gap-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -243,7 +241,7 @@ function App() {
                     </svg>
                     React
                   </span>
-                  <span className="px-3 py-1 rounded-full bg-[rgb(var(--primary))] bg-opacity-10 backdrop-blur-sm flex items-center gap-2">
+                  <span className="px-3 py-1 rounded-full bg-primary bg-opacity-10 backdrop-blur-sm flex items-center gap-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -255,7 +253,7 @@ function App() {
                     </svg>
                     Bootstrap
                   </span>
-                  <span className="px-3 py-1 rounded-full bg-[rgb(var(--primary))] bg-opacity-10 backdrop-blur-sm flex items-center gap-2">
+                  <span className="px-3 py-1 rounded-full bg-primary bg-opacity-10 backdrop-blur-sm flex items-center gap-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -267,7 +265,7 @@ function App() {
                     </svg>
                     Tailwind
                   </span>
-                  <span className="px-3 py-1 rounded-full bg-[rgb(var(--primary))] bg-opacity-10 backdrop-blur-sm flex items-center gap-2">
+                  <span className="px-3 py-1 rounded-full bg-primary bg-opacity-10 backdrop-blur-sm flex items-center gap-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -279,7 +277,7 @@ function App() {
                     </svg>
                     Node.js
                   </span>
-                  <span className="px-3 py-1 rounded-full bg-[rgb(var(--primary))] bg-opacity-10 backdrop-blur-sm flex items-center gap-2">
+                  <span className="px-3 py-1 rounded-full bg-primary bg-opacity-10 backdrop-blur-sm flex items-center gap-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -301,14 +299,14 @@ function App() {
       {/* Projects */}
 
       <motion.section
-        className="py-12 px-6 bg-[rgb(var(--secondary))] mb-[15vh] rounded-t-[2rem]"
+        className="py-12 px-6 bg-secondary mb-[15vh] rounded-t-[2rem]"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
         <div className="max-w-[80em] mx-auto">
-          <h2 className="text-[rgb(var(--accent))] text-4xl font-bold mb-8 text-center">
+          <h2 className="text-accent text-4xl font-bold mb-8 text-center">
             Projects
           </h2>
 
@@ -318,27 +316,27 @@ function App() {
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.2 }}
               whileHover={{ scale: 1.02 }}
-              className="rounded-xl overflow-hidden backdrop-blur-xl bg-[rgb(var(--primary))] bg-opacity-5 border border-[rgb(var(--accent))] border-opacity-10 p-6 hover:bg-opacity-10 transition-all duration-300"
+              className="rounded-xl overflow-hidden backdrop-blur-xl bg-primary bg-opacity-5 border border-accent border-opacity-10 p-6 hover:bg-opacity-10 transition-all duration-300"
             >
-              <h3 className="text-[rgb(var(--accent))] text-xl font-semibold mb-3">
+              <h3 className="text-accent text-xl font-semibold mb-3">
                 Personal CV Website
               </h3>
-              <p className="text-[rgb(var(--text))] mb-4">
+              <p className="text-text mb-4">
                 A modern, responsive CV website built with React, Framer Motion,
                 and Tailwind CSS. Features smooth animations and glass morphism
                 effects.
               </p>
               <div className="flex gap-2 mb-4 flex-wrap">
-                <span className="px-2 py-1 text-sm rounded-full bg-[rgb(var(--primary))] bg-opacity-10">
+                <span className="px-2 py-1 text-sm rounded-full bg-primary bg-opacity-10">
                   React
                 </span>
-                <span className="px-2 py-1 text-sm rounded-full bg-[rgb(var(--primary))] bg-opacity-10">
+                <span className="px-2 py-1 text-sm rounded-full bg-primary bg-opacity-10">
                   TypeScript
                 </span>
-                <span className="px-2 py-1 text-sm rounded-full bg-[rgb(var(--primary))] bg-opacity-10">
+                <span className="px-2 py-1 text-sm rounded-full bg-primary bg-opacity-10">
                   Tailwind
                 </span>
-                <span className="px-2 py-1 text-sm rounded-full bg-[rgb(var(--primary))] bg-opacity-10">
+                <span className="px-2 py-1 text-sm rounded-full bg-primary bg-opacity-10">
                   Framer Motion
                 </span>
               </div>
@@ -346,7 +344,7 @@ function App() {
                 href="https://github.com/mavxa/cv-mavxa"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[rgb(var(--accent))] hover:underline inline-flex items-center gap-2"
+                className="text-accent hover:underline inline-flex items-center gap-2"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -366,24 +364,24 @@ function App() {
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.3 }}
               whileHover={{ scale: 1.02 }}
-              className="rounded-xl overflow-hidden backdrop-blur-xl bg-[rgb(var(--primary))] bg-opacity-5 border border-[rgb(var(--accent))] border-opacity-10 p-6 hover:bg-opacity-10 transition-all duration-300"
+              className="rounded-xl overflow-hidden backdrop-blur-xl bg-primary bg-opacity-5 border border-accent border-opacity-10 p-6 hover:bg-opacity-10 transition-all duration-300"
             >
-              <h3 className="text-[rgb(var(--accent))] text-xl font-semibold mb-3">
+              <h3 className="text-accent text-xl font-semibold mb-3">
                 Stack Flow Landing
               </h3>
-              <p className="text-[rgb(var(--text))] mb-4">
+              <p className="text-text mb-4">
                 A responsive landing page showcasing modern design principles
                 and SCSS capabilities. Built with a focus on clean design and
                 smooth user experience.
               </p>
               <div className="flex gap-2 mb-4 flex-wrap">
-                <span className="px-2 py-1 text-sm rounded-full bg-[rgb(var(--primary))] bg-opacity-10">
+                <span className="px-2 py-1 text-sm rounded-full bg-primary bg-opacity-10">
                   SCSS
                 </span>
-                <span className="px-2 py-1 text-sm rounded-full bg-[rgb(var(--primary))] bg-opacity-10">
+                <span className="px-2 py-1 text-sm rounded-full bg-primary bg-opacity-10">
                   Bootstrap
                 </span>
-                <span className="px-2 py-1 text-sm rounded-full bg-[rgb(var(--primary))] bg-opacity-10">
+                <span className="px-2 py-1 text-sm rounded-full bg-primary bg-opacity-10">
                   HTML5
                 </span>
               </div>
@@ -392,7 +390,7 @@ function App() {
                   href="https://scss-landing-stack-flow.vercel.app"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[rgb(var(--accent))] hover:underline inline-flex items-center gap-2"
+                  className="text-accent hover:underline inline-flex items-center gap-2"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -413,24 +411,24 @@ function App() {
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.4 }}
               whileHover={{ scale: 1.02 }}
-              className="rounded-xl overflow-hidden backdrop-blur-xl bg-[rgb(var(--primary))] bg-opacity-5 border border-[rgb(var(--accent))] border-opacity-10 p-6 hover:bg-opacity-10 transition-all duration-300"
+              className="rounded-xl overflow-hidden backdrop-blur-xl bg-primary bg-opacity-5 border border-accent border-opacity-10 p-6 hover:bg-opacity-10 transition-all duration-300"
             >
-              <h3 className="text-[rgb(var(--accent))] text-xl font-semibold mb-3">
+              <h3 className="text-accent text-xl font-semibold mb-3">
                 Constellations App
               </h3>
-              <p className="text-[rgb(var(--text))] mb-4">
+              <p className="text-text mb-4">
                 An educational pet project developed during my studies,
                 demonstrating React components and Tailwind styling. Interactive
                 constellation visualization.
               </p>
               <div className="flex gap-2 mb-4 flex-wrap">
-                <span className="px-2 py-1 text-sm rounded-full bg-[rgb(var(--primary))] bg-opacity-10">
+                <span className="px-2 py-1 text-sm rounded-full bg-primary bg-opacity-10">
                   React
                 </span>
-                <span className="px-2 py-1 text-sm rounded-full bg-[rgb(var(--primary))] bg-opacity-10">
+                <span className="px-2 py-1 text-sm rounded-full bg-primary bg-opacity-10">
                   Tailwind CSS
                 </span>
-                <span className="px-2 py-1 text-sm rounded-full bg-[rgb(var(--primary))] bg-opacity-10">
+                <span className="px-2 py-1 text-sm rounded-full bg-primary bg-opacity-10">
                   JavaScript
                 </span>
               </div>
@@ -439,7 +437,7 @@ function App() {
                   href="https://constellations-gsk.vercel.app"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[rgb(var(--accent))] hover:underline inline-flex items-center gap-2"
+                  className="text-accent hover:underline inline-flex items-center gap-2"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -461,17 +459,17 @@ function App() {
       {/* education? */}
 
       <motion.section
-        className="pt-12 px-6 bg-[rgb(var(--secondary))] rounded-t-[2rem]"
+        className="pt-12 px-6 bg-secondary rounded-t-[2rem]"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-[rgb(var(--accent))] text-4xl font-bold mb-8 text-center">
+        <h2 className="text-accent text-4xl font-bold mb-8 text-center">
           Education
         </h2>
 
-        <p className="text-[rgb(var(--primary))] text-[14px] py-2">
+        <p className="text-primary text-[14px] py-2">
           P.S. I'm currently studying to become an IT specialist in college.
         </p>
       </motion.section>
