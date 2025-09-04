@@ -20,6 +20,9 @@ function App() {
 
   return (
     <div className="app">
+      
+      {/* main */}
+
       <motion.section
         style={{
           y: headerY,
@@ -52,8 +55,8 @@ function App() {
             </motion.span>
           </h1>
         </motion.div>
-        
-        <motion.div 
+
+        <motion.div
           className="absolute inset-0 z-0"
           initial={{ opacity: 0 }}
           animate={{ opacity: 0.1 }}
@@ -63,6 +66,8 @@ function App() {
           <div className="absolute bottom-[60%] right-[10%] w-[25vw] h-[25vw] rounded-full bg-[rgb(var(--secondary))] blur-[100px]" />
         </motion.div>
       </motion.section>
+
+      {/* text-animate */}
 
       <div className="h-[6.5vh] relative overflow-hidden mb-[8vh]">
         <AnimatePresence>
@@ -93,6 +98,8 @@ function App() {
           )}
         </AnimatePresence>
       </div>
+
+      {/* about */}
 
       <motion.section
         className="bg-[rgb(var(--secondary))] py-12 mb-[15vh] rounded-t-[2rem]"
@@ -291,6 +298,8 @@ function App() {
         </div>
       </motion.section>
 
+      {/* Projects */}
+
       <motion.section
         className="py-12 px-6 bg-[rgb(var(--secondary))] mb-[15vh] rounded-t-[2rem]"
         initial={{ opacity: 0 }}
@@ -448,6 +457,8 @@ function App() {
           </div>
         </div>
       </motion.section>
+
+      {/* education? */}
 
       <motion.section
         className="pt-12 px-6 bg-[rgb(var(--secondary))] rounded-t-[2rem]"
