@@ -20,7 +20,7 @@ function App() {
 
   return (
     <div className="app">
-      
+
       {/* main */}
 
       <motion.section
@@ -43,7 +43,7 @@ function App() {
               transition={{ delay: 0.4, duration: 0.6 }}
               className="inline-block"
             >
-              WELCOM TO
+              WELCOME TO
             </motion.span>
             <motion.span
               initial={{ opacity: 0, x: 50 }}
