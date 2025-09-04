@@ -1,0 +1,11 @@
+.app {
+  min-height: 100vh;
+  background-color: rgb(var(--background));
+  color: rgb(var(--text));
+
+}
+
+.preview {
+  line-height: 0.5;
+  font-weight: 600;
+}
