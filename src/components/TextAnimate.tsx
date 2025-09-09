@@ -27,7 +27,7 @@ export default function TextAnimate() {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ delay: 0.2 }}
-                className="text-text text-[0.9rem] md:text-xl text-center leading-relaxed"
+                className="text-text text-[0.65rem] md:text-xl text-center"
               >
                 Junior Frontend Developer currently studying IT, passionate
                 about creating responsive and user-friendly web applications.

@@ -32,7 +32,7 @@ export default function PreviewSection() {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="relative z-10"
       >
-        <h1 className="text-accent text-[4rem] md:text-[12rem] preview flex flex-col items-center gap-8 md:gap-16 md:mx-auto">
+        <h1 className="text-accent text-[3.5rem] md:text-[12rem] preview flex flex-col items-center gap-8 md:gap-16 md:mx-auto">
           <motion.span
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
