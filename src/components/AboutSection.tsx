@@ -9,14 +9,14 @@ export default function AboutSection() {
       viewport={{ once: true }}
     >
       <div className="max-w-[20em] md:max-w-[80em] mx-auto px-6">
-        <div className="flex flex-col md:flex-row gap-[12vh] items-start">
+        <div className="flex flex-col md:flex-row gap-[3vh] md:gap-[12vh] items-start">
           <motion.div
             initial={{ x: -50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.2 }}
             className="w-full md:w-[30%]"
           >
-            <div className="rounded-full overflow-hidden border-4 border-primary aspect-square mb-6">
+            <div className="rounded-full overflow-hidden border-4 border-primary aspect-square md:mb-6">
               <img
                 src="https://github.com/mavxa.png"
                 alt="Avatar"
@@ -29,23 +29,23 @@ export default function AboutSection() {
             initial={{ x: 50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.3 }}
-            className="w-full md:w-[70%]"
+            className="w-full md:w-[70%] text-center md:text-start"
           >
-            <h2 className="text-primary text-5xl font-bold mb-5">Mavxa</h2>
+            <h2 className="text-primary text-6xl md:text-5xl font-bold mb-7 text-center md:text-start">Mavxa</h2>
 
             <div className="mb-5">
-              <h3 className="text-accent text-xl font-semibold mb-2">
+              <h3 className="text-accent text-2xl md:text-xl font-semibold mb-2">
                 Languages
               </h3>
-              <ul className="space-y-1 flex gap-2.5 text-primary/75">
+              <ul className="space-y-1 flex gap-0 md:gap-2.5 text-primary/75">
                 <li>🇷🇺 Russian (Native)</li>
-                <li>|</li>
+                <li className="invisible md:visible">|</li>
                 <li>🇬🇧 English (Intermediate)</li>
               </ul>
             </div>
 
             <div className="mb-5 text-primary/75">
-              <h3 className="text-accent text-xl font-semibold mb-2">
+              <h3 className="text-accent text-2xl md:text-xl font-semibold mb-2">
                 Contact
               </h3>
               <ul className="space-y-2">
@@ -77,10 +77,10 @@ export default function AboutSection() {
             </div>
 
             <div>
-              <h3 className="text-accent text-xl font-semibold mb-2">
+              <h3 className="text-accent text-2xl md:text-xl font-semibold mb-2">
                 Tech Stack
               </h3>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2.5 md:gap-2">
                 <span className="px-3 py-1 rounded-full bg-primary bg-opacity-10 backdrop-blur-sm flex items-center gap-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
